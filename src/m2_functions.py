@@ -3,8 +3,8 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and Gabby Davidson.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 # TODO: 2.
@@ -18,9 +18,10 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 ###############################################################################
 
 import rosegraphics as rg
-
+import math
 
 def main():
+    triangle(3,4)
     """
     TESTS the functions that you will write below.
     You write the tests per the _TODO_s below.
@@ -28,7 +29,7 @@ def main():
 
 
 ###############################################################################
-# TODO: 3a.  Define a function immediately below this _TODO_.
+# DONE: 3a.  Define a function immediately below this _TODO_.
 #   It takes two arguments that denote, for a right triangle,
 #   the lengths of the two sides adjacent to its right angle,
 #   and it returns the length of the hypotenuse of that triangle.
@@ -36,11 +37,15 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 3b.  In main, CALL your function and print the returned value,
+# DONE: 3b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
-
+def triangle(length1,length2):
+    side_a = length1
+    side_b = length2
+    hyp: float = math.sqrt((side_a ** 2) + (side_b ** 2))
+    print(hyp)
 
 ###############################################################################
 # TODO: 4a.  Define a function immediately below this _TODO_.
@@ -69,6 +74,9 @@ def main():
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
+rg.TurtleWindow
+charlie = rg.SimpleTurtle()
+charlie.pen = rg.Pen('green',thickness)
 
 
 ###############################################################################
