@@ -98,7 +98,7 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
         my_turtle.left(twist)
 
 ###############################################################################
-# TODO: 3.
+# DONE: 3.
 #   There are four FUNCTIONS defined ABOVE this:
 #     main
 #     run_example
@@ -126,6 +126,12 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
 
 
 def try_methods():
+    william = rg.SimpleTurtle
+    william.pen = rg.Pen('brown', 5)
+    william.forward(150)
+    william.left(90)
+    william.forward(50)
+    william.backward(100)
     """
     Constructs a SimpleTurtle and sets its   pen   to a new rg.Pen
     that is 'brown' with thickness 5.
