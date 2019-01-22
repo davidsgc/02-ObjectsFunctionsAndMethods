@@ -1765,7 +1765,7 @@ class SimpleTurtle(object):
         self._turtle = turtle.Turtle(shape)
         self._update_real_turtle()
 
-    def forward(self, distance):
+    def forward(self, distance: object) -> object:
         """
         Makes this SimpleTurtle go forward the given distance
         (in pixels).  Example (assuming  sally  is an rg.SimpleTurtle):
