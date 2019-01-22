@@ -74,12 +74,17 @@ def triangle(length1,length2):
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
-rg.TurtleWindow
-charlie = rg.SimpleTurtle()
-charlie.pen = rg.Pen('green',thickness)
 
-
-
+def turtles(color, thickness):
+    window = rg.TurtleWindow()
+    charlie = rg.SimpleTurtle()
+    charlie.pen = rg.Pen('green', thickness)
+    samson = rg.SimpleTurtle()
+    samson.pen = rg.Pen(color, 5)
+    charlie.forward(100)
+    samson.backward(100)
+    window.close_on_mouse_click()
+turtles('magenta', 6)
 ###############################################################################
 # TODO: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
