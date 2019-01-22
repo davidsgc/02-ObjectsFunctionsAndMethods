@@ -79,6 +79,7 @@ charlie = rg.SimpleTurtle()
 charlie.pen = rg.Pen('green',thickness)
 
 
+
 ###############################################################################
 # TODO: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
