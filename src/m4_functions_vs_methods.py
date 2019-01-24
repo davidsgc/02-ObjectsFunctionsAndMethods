@@ -126,7 +126,7 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
 
 
 def try_methods():
-    william = rg.SimpleTurtle
+    william = rg.SimpleTurtle()
     william.pen = rg.Pen('brown', 5)
     william.forward(150)
     william.left(90)
